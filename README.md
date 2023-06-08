@@ -57,49 +57,31 @@ Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan d
 
 Data yang digunakan dalam proyek ini didapatkan di situs [kaggle](https://kaggle.com) kumpulan data ini merupakan data sintetik yang dihasilkan menggunakan simulator yang dimanakan PaySim. PaySim mensimulasikan transaksi elektronik berdasarkan sampel transaksi nyata yang diambil dari log transaksi keuangan satu bulan dari layanan uang seluler yang diterapkan di negara Afrika. Lebih lebih detailnya bisa dilihat pada sumber data [kaggle: online fraud detection](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection?resource=download)
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Berikut informasi dataset:  
+- Dataset memiliki 6362620 sampel dan 11 fitur.
+- Dataset memili 3 fitur bertipe data object, 3 bertipe data int64 dan 4 bertipe data float64.
+- Dataset berformat CSV (comma separated value).
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- step : memetakan satuan waktu di dunia nyata. Dalam hal ini 1 langkah adalah 1 jam waktu. Total langkah 744 (simulasi 30 hari).
-- type : Metode transaksi 
-- dst
+### Variabel-variabel pada dataset adalah sebagai berikut:
+- step            : Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari).
+- type            : Metode transaksi 
+- amount          : Jumlah transaksi
+- nameOrig        : Pelanggan memulai transaksi
+- oldbalanceOrg   : Saldo awal sebelum transaksi
+- newbalanceOrig  : Saldo baru setelah transaksi
+- nameDest        : Penerima transaksi
+- oldbalanceDest  : Penerima saldo awal sebelum transaksi.
+- newbalanceDest  : Penerima saldo baru setelah transaksi.
+- isFraud         : Transaksi penipuan.
+- isFlaggedFraud  : Transaksi ditandai penipuan dan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu.
 
-
-Ini adalah contoh 1 baris dengan penjelasan header:
-
-1, PEMBAYARAN,1060.31,C429214117,1089.0,28.69,M1591654462,0.0,0.0,0,0
-
-
-jumlah -
-jumlah transaksi dalam mata uang lokal.
-
-nameOrig - pelanggan yang memulai transaksi
-
-oldbalanceOrg - saldo awal sebelum transaksi
-
-newbalanceOrig - saldo baru setelah transaksi
-
-nameDest - pelanggan yang menjadi penerima transaksi
-
-oldbalanceDest - penerima saldo awal sebelum transaksi. Perhatikan bahwa tidak ada informasi untuk pelanggan yang dimulai dengan M (Merchants).
-
-newbalanceDest - penerima saldo baru setelah transaksi. Perhatikan bahwa tidak ada informasi untuk pelanggan yang dimulai dengan M (Merchants).
-
-isFraud - Ini adalah transaksi yang dilakukan oleh agen penipuan di dalam simulasi. Dalam kumpulan data khusus ini perilaku penipuan agen bertujuan untuk mendapatkan keuntungan dengan mengambil kendali atau akun pelanggan dan mencoba mengosongkan dana dengan mentransfer ke akun lain dan kemudian menguangkan sistem.
-
-isFlaggedFraud - Model bisnis ini bertujuan untuk mengontrol transfer besar-besaran dari satu akun ke akun lain dan menandai upaya ilegal. Upaya ilegal dalam kumpulan data ini adalah upaya untuk mentransfer lebih dari 200.000 dalam satu transaksi.
+### Penanganan missing value
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/22f35d85-9ef7-4491-b6d7-320b93be22ef)
 
 
+### Univariate Analysis
+Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
-
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
