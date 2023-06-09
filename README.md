@@ -75,11 +75,21 @@ Berikut informasi dataset:
 - isFraud         : Transaksi penipuan.
 - isFlaggedFraud  : Transaksi ditandai penipuan dan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu.
 
-### Penanganan missing value
+### Penanganan missing value & Outliers
 
 Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/694fc23e-cda5-4d06-a066-48dc8b3abc1b)
+
+Distrusi sebaran data pada masing-masing fitur
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/f574ebfd-5dd4-4881-8cac-0664e72c5268)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d4b10f3e-acb2-43dd-8dbf-bfcfe54c4364)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/3e0e4bf5-e91a-4d6e-96c1-0703bfc315f5)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/7c98fecf-ba47-44ea-82bb-c888aae2c65a)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/c46585a4-ee91-478f-884c-55aa1b13f03e)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/b56b7dfe-2284-4f33-9258-59a2d154b244)
+
+
 
 ### Univariate Analysis
 Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
@@ -96,7 +106,7 @@ Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi seb
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d0b63e2e-0df0-4683-9151-c7eeb78ad8f8)
 
 
-Pada fitur isFraud berisi _booleam_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
+Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/b7198d14-b83f-4626-995d-f5475eca532d)
 
