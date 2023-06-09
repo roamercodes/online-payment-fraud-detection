@@ -76,6 +76,9 @@ Berikut informasi dataset:
 - isFlaggedFraud  : Transaksi ditandai penipuan dan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu.
 
 ### Penanganan missing value
+
+Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/22f35d85-9ef7-4491-b6d7-320b93be22ef)
 
 
