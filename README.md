@@ -108,19 +108,28 @@ Distribusi sebaran data setelah _outliers_ dibersihkan.
 
 
 Step
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/2b8806f6-3cac-4f51-8dfd-b004d8e4458f)
+
 Amount
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/138a8920-2c0e-47e7-993f-8db7bf9a4b35)
+
 OldBalanceOrg
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/9195630d-977c-4307-89af-bacf6f6e86d4)
+
 NewBalanceOrig
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/6127d3ed-baef-43c1-a63c-683e943ef026)
+
 OldBalanceDest
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/ce4b71b5-0142-40f5-a04f-dad397972de9)
+
 NewBalanceDest
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/bc110d45-7a84-42bf-84bc-2f50d3377c00)
-
-
 
 ### Univariate Analysis
 Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
@@ -148,9 +157,6 @@ Kemudian pada kolom _isFraud_ transaksi penipuan hanya terjadi di 2 metode trans
 Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu. Karena terlalu sedikit, maka fitur tersebut tidak akan digunakan.
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/4d993b27-a80d-4910-b4ff-63a2b24a6c75)
-
-
-
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
