@@ -91,6 +91,8 @@ Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada 
 - Debit
 - Cash in
 
+Pada fitur isFraud berisi _booleam_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.001%
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/b7198d14-b83f-4626-995d-f5475eca532d)
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
