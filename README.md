@@ -79,11 +79,17 @@ Berikut informasi dataset:
 
 Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
 
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/22f35d85-9ef7-4491-b6d7-320b93be22ef)
-
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/694fc23e-cda5-4d06-a066-48dc8b3abc1b)
 
 ### Univariate Analysis
 Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
+
+Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada pada fitur type, ternyata pada fitur type ada lima jenis metode transaksi, yaitu:
+- Payment
+- Transfer
+- Cash Out
+- Debit
+- Cash in
 
 
 ## Data Preparation
