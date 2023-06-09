@@ -83,21 +83,23 @@ Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada set
 
 Distrusi sebaran data pada masing-masing fitur numerik.
 
-
 Step
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/f574ebfd-5dd4-4881-8cac-0664e72c5268)
-
 Amount
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d4b10f3e-acb2-43dd-8dbf-bfcfe54c4364)
 
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d4b10f3e-acb2-43dd-8dbf-bfcfe54c4364)
 OldBalanceOrg
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/3e0e4bf5-e91a-4d6e-96c1-0703bfc315f5)
 NewBalanceOrig
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/7c98fecf-ba47-44ea-82bb-c888aae2c65a)
 OldBalanceDest
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/c46585a4-ee91-478f-884c-55aa1b13f03e)
 NewBalanceDest
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/b56b7dfe-2284-4f33-9258-59a2d154b244)
 
 Untuk menghapus _outliers_ akan digunakan metode IQR.
