@@ -6,8 +6,6 @@
 
 Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan machine learning menggunakan metode klasifikasi beberapa algoritmanya.  
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
-
 **Referensi**:
 - [Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering](https://hcommons.org/deposits/objects/hc:43350/datastreams/CONTENT/content) 
 - [Advantages of the PaySim Simulator for Improving Financial Fraud Controls](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2640900/Computing2019papercameraready.pdf?sequence=1) 
@@ -17,22 +15,16 @@ Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek
   
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
 Transaksi penipuan yang terjadi saat ini telah menggunakan sistem secara elektronik sehingga untuk mengidentifikasi tersebut perlu juga menggunakan teknologi yang mumpuni. Teknologi machine learning dapat berkontribusi secara bermanfaat dalam tantangan mendeteksi transaksi penipuan.
-
-Bagian laporan ini mencakup:
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
 - Fitur apa yang paling berpengaruh terhadap transaksi penipuan?
 - Pada jenis pembayaran apa transaksi penipuan sering terjadi?
 - Pernyataan Masalah n
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
 - Mengetahui fitur yang paling berkorelasi terhadap transaksi penipuan
 - Mengetahui pada metode pembayaran apa transaksi penipuan sering terjadi
 - 
