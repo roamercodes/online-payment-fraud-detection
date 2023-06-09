@@ -81,7 +81,8 @@ Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada set
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/694fc23e-cda5-4d06-a066-48dc8b3abc1b)
 
-Distrusi sebaran data pada masing-masing fitur numerik
+Distrusi sebaran data pada masing-masing fitur numerik.
+
 
 Step
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/f574ebfd-5dd4-4881-8cac-0664e72c5268)
