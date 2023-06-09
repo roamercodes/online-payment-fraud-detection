@@ -85,9 +85,12 @@ Distrusi sebaran data pada masing-masing fitur numerik.
 
 
 Step
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/f574ebfd-5dd4-4881-8cac-0664e72c5268)
+
 Amount
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d4b10f3e-acb2-43dd-8dbf-bfcfe54c4364)
+
 OldBalanceOrg
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/3e0e4bf5-e91a-4d6e-96c1-0703bfc315f5)
 NewBalanceOrig
