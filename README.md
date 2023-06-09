@@ -102,6 +102,7 @@ IQR adalah singkatan dari Inter Quartile Range. Kuartil dari suatu populasi adal
 
 Distribusi sebaran data setelah _outliers_ dibersihkan.
 
+
 Step
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/2b8806f6-3cac-4f51-8dfd-b004d8e4458f)
 Amount
