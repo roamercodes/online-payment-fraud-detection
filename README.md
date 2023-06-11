@@ -12,6 +12,7 @@ Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan seh
 - [Mengenal Elektronik Banking](http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125/112) 
 - [Penerapan Deep Learningdalam Deteksi Penipuan Transaksi Keuangan Secara Elektronik](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
 - [Analisa Transaksi Belanja Online Pada Masa Pandemi Covid-19](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
+- [dicoding - machine learning terapan](https://www.dicoding.com/academies/319)
   
 ## Business Understanding
 
@@ -163,8 +164,10 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
 - Korelasi antar fitur numerik
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/1fbbe7b9-d309-4603-b6eb-e6f0659884e1)
 
-Dapat dilihat
+  _newbalanceOrig_ dan _oldbalanceOrg_ meliki korelasi yang tinggi.
+  _newbalanceDest_ dan _oldbalanceDest_ juga memiliki korelasi tinggi.
 
+Selain itu, kami memiliki korelasi yang relatif tinggi antara jumlah dan newbalanceDest dan jumlah dengan oldbalanceDes
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
