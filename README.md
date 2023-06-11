@@ -172,7 +172,7 @@ Selain itu, kami memiliki korelasi yang relatif tinggi antara jumlah dan newbala
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
+- ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/00dda550-c83c-4b38-9549-28680ccd4088)
 - Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
 
 ## Modeling
