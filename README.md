@@ -168,11 +168,17 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
   _newbalanceDest_ dan _oldbalanceDest_ juga memiliki korelasi tinggi.
 
 Selain itu, kami memiliki korelasi yang relatif tinggi antara jumlah dan newbalanceDest dan jumlah dengan oldbalanceDes
+
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/00dda550-c83c-4b38-9549-28680ccd4088)
+
+Seperti pada gambar diatas, fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik.
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
-- ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/00dda550-c83c-4b38-9549-28680ccd4088)
+- Merubah
+
+
 - Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
 
 ## Modeling
