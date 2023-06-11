@@ -158,6 +158,13 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/4d993b27-a80d-4910-b4ff-63a2b24a6c75)
 
+### Multivariate Analysis
+
+- Korelasi antar fitur numerik
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/1fbbe7b9-d309-4603-b6eb-e6f0659884e1)
+
+Dapat dilihat
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
