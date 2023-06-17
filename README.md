@@ -144,13 +144,19 @@ Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logist
   
   - Kelebihan
   
-    Menghasilkan eror yang lebih rendah.
-    Memberikan hasil yang bagus dalam klasifikasi.
-    Dapat mengatasi data training dalam jumlah sangat besar secara efisien.
-    Metode yang efektif untuk mengestimasi hilangnya data.
-    Dapat memperkiraan variabel apa yang penting dalam klasifikasi.
-    Menyediakan metode eksperimental untuk mendeteksi interaksi variabel.
+    - Menghasilkan eror yang lebih rendah.
+    - Memberikan hasil yang bagus dalam klasifikasi.
+    - Dapat mengatasi data training dalam jumlah sangat besar secara efisien.
+    - Metode yang efektif untuk mengestimasi hilangnya data.
+    - Dapat memperkiraan variabel apa yang penting dalam klasifikasi.
+    - Menyediakan metode eksperimental untuk mendeteksi interaksi variabel.
   
+  - Kekurangan 
+
+    - Waktu pemrosesan yang lama karena menggunakan data yang banyak dan membangun model tree yang banyak pula untuk membentuk random trees karena menggunakan single processor.
+    - Interpretasi yang sulit dan membutuhkan mode penyetelan yang tepat untuk data.
+    - ketika digunakan untuk regresi, mereka tidak dapat memprediksi di luar kisaran dalam data percobaan, hal ini di mungkinkan data terlalu cocok dengan kumpulan data pengganggu (noisy).
+    
 - XGBoost
 
 ## Evaluation
