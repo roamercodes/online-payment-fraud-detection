@@ -106,12 +106,12 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
 ### Multivariate Analysis
 
 - Korelasi antar fitur numerik
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/1fbbe7b9-d309-4603-b6eb-e6f0659884e1)
 
-  _newbalanceOrig_ dan _oldbalanceOrg_ meliki korelasi yang tinggi.
-  _newbalanceDest_ dan _oldbalanceDest_ juga memiliki korelasi tinggi.
-
-Selain itu, kami memiliki korelasi yang relatif tinggi antara jumlah dan newbalanceDest dan jumlah dengan oldbalanceDes
+  - _newbalanceOrig_ dan _oldbalanceOrg_ meliki korelasi yang tinggi.
+  -  _newbalanceDest_ dan _oldbalanceDest_ juga memiliki korelasi tinggi.
+  -  Selain itu, korelasi yang relatif tinggi juga ada antara _amount_ dan _newbalanceDest_ dan _amount_ dengan _oldbalanceDes_
 
 ## Data Preparation
 
