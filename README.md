@@ -176,6 +176,10 @@ Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logist
 Model terbaik didapat pada XGBoost, dengan menggunakan model ini mampu mendapatkan akurasi data latih maupun data tes tertinggi daripada model lainnya, data yang digunakan juga sangat besar hal ini dapat menutupi kekurangan pada model XGBoost.
 
 ## Evaluation
+
+Pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu  **akurasi, precision, recall, dan F1 score**. 
+
+## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
 
 Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
