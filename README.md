@@ -202,7 +202,23 @@ Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang dig
 | random forest | 99.93% | 99.93% |
 | logistic regression | 99.82% | 99.82% |
 | xgboost | 99.98% | 99.98 |
+ 
+   
+Berikut hasil evaluasi pada penelitian ini yaitu pada model _Random Forest_ :
+
+| class | presision | recall | f1-score | support |
+| ----- | --------- | ------ | -------- | ------- |
+|   0   |   1.00    |  1.00  |   1.00   | 1906318 |
+|   1   |   1.00    |  0.47  |   0.64   |  2468   |
+
   
+Berikut hasil evaluasi pada penelitian ini yaitu pada model _Logistic Regression_ :
+
+| class | presision | recall | f1-score | support |
+| ----- | --------- | ------ | -------- | ------- |
+|   0   |   1.00    |  1.00  |   1.00   | 1906318 |
+|   1   |   0.34    |  0.41  |   0.38   |  2468   |
+
   
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
 
@@ -210,22 +226,4 @@ Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.97    |  0.87  |   0.92   |  2468   |
-
-## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
-
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
 
