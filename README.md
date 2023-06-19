@@ -195,24 +195,21 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
 
-Berikut hasil evaluasi pada penelitian ini:
+Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
-99.931452	99.931318
-LogisticRegression	99.825252	99.822295
-XGBoost	99.987718	99.980197
-
+| models | train | test |
+| ------ | :---: | ---: |
+| random forest | 99.93% | 99.93% |
+| logistic regression | 99.82% | 99.82% |
+| xgboost | 99.98% | 99.98 |
+  
+  
+Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
 
 | class | presision | recall | f1-score | support |
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.97    |  0.87  |   0.92   |  2468   |
-
-| models | train | test |
-| ------ | ----- | ---- |
-| random forest | 99.93% | 99.93% |
-| logistic regression | 99.82% | 99.82% |
-| xgboost | 99.98% | 99.98 |
-  
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
