@@ -106,13 +106,9 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/00dda550-c83c-4b38-9549-28680ccd4088)
 
-Seperti pada gambar diatas, fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik.
+Seperti pada gambar diatas, fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik atau biasa disebut [One Hot Encoding](https://ilmudatapy.com/one-hot-encoding-di-python/).
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Merubah
-
-
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+Kemudian melakukan pembagian data untuk data latih dan data tes. Data latih digunakan pada proses pembelajaran dalam membangun model sedangkan data tes digunakan pada proses evaluasi kinerja model. Karena data cukup banyak maka pada proyek ini dilakukan pembagian sebanyak 70% untuk data latih dan 30% untuk data tes, jadi dari total dataset 6362620 maka data latih mendapat 4453834 dan data tes mendapat 1908786.
 
 ## Modeling
 Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) [XGBoost](https://xgboost.readthedocs.io/en/stable/).
