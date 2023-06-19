@@ -177,7 +177,23 @@ Model terbaik didapat pada XGBoost, dengan menggunakan model ini mampu mendapatk
 
 ## Evaluation
 
-Pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu  **akurasi, precision, recall, dan F1 score**. 
+Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu _confussion matriks_ **akurasi, precision, recall, dan F1 score**. Dari sebuah matriks konfusi kita bisa mendapatkan nilai-nilai seperti true positive (TP), false positive (FP), true negative (TN), dan false negative (FN). Setiap nilai yang disebutkan dapat digunakan untuk mendapatkan  presisi, F1, recall dan akurasi [Understanding Confusion Matrix](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62). Persamaan di bawah ini menunjukan fungsi dari keempat istilah tersebut :
+
+- Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
+
+  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d638fec0-4c47-4b04-b243-2ebd2afdb117)
+
+- Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif. 
+
+  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/255335b4-ca63-42c3-bf25-4287b10596f7)
+
+- Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
+
+  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/cb0f77cc-6621-49be-8b43-49b3d4deb8a7)
+
+- F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
+
+  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
