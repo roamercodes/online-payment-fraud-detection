@@ -195,6 +195,12 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
 
+Berikut hasil evaluasi pada penelitian ini:
+
+| presision | recall | f1-score | support |
+| --------- | ------ | -------- | ------- |
+
+
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
 
