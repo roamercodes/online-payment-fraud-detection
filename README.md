@@ -21,34 +21,23 @@ Transaksi penipuan yang terjadi saat ini telah menggunakan sistem secara elektro
 ### Problem Statements
 
 - Fitur apa yang paling berpengaruh terhadap transaksi penipuan?
-- Pada jenis pembayaran apa transaksi penipuan sering terjadi?
-- Pernyataan Masalah n
+- Pada jenis pembayaran apa saja transaksi penipuan sering terjadi?
+- Bagaimana cara memprediksi transaksi penipuan?
 
 ### Goals
 
-- Mengetahui fitur yang paling berkorelasi terhadap transaksi penipuan
-- Mengetahui pada metode pembayaran apa transaksi penipuan sering terjadi
-- 
-
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+- Mengetahui fitur yang paling berkorelasi terhadap transaksi penipuan.
+- Mengetahui pada metode pembayaran apa transaksi penipuan sering terjadi.
+- Membuat model _machine learning_ yang dapat memprediksi transaksi penipuan.
 
 ### Solution Statement
-- Model klasifikasi yang yaitu SVM, KNN dan Random Forest
 
-
-Menjelaskan tujuan dari pernyataan masalah:
-- Mengetahui fitur yang paling berkorelasi terhadap transaksi penipuan
-- Mengetahui pada metode pembayaran apa transaksi penipuan sering terjadi
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+- Menggunakan 3 model algoritma berbeda yaitu Random Forest, Logistic Regression dan XGBoost.
+- Menganalisis dan memvisualisasi set data dengan melakukan analisis univariat dan multivariat untuk memahami data.
+- Mengevaluasi akurasi data latih dan data uji lalu mengkomparasikan dengan masing-masing model.
+- Menggunakan metrik konfusi sebagai acuan hasil evaluasi untuk mendapatkan kinerja model terbaik.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
 
 Data yang digunakan dalam proyek ini didapatkan di situs [kaggle](https://kaggle.com) kumpulan data ini merupakan data sintetik yang dihasilkan menggunakan simulator yang dimanakan PaySim. PaySim mensimulasikan transaksi elektronik berdasarkan sampel transaksi nyata yang diambil dari log transaksi keuangan satu bulan dari layanan uang seluler yang diterapkan di negara Afrika. Lebih lebih detailnya bisa dilihat pada sumber data [kaggle: online fraud detection](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection?resource=download)
 
@@ -201,7 +190,7 @@ Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang dig
 | ------ | :---: | ---: |
 | random forest | 99.93% | 99.93% |
 | logistic regression | 99.82% | 99.82% |
-| xgboost | 99.98% | 99.98 |
+| xgboost | 99.98% | 99.98% |
  
    
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _Random Forest_ :
