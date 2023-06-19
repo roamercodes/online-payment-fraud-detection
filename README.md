@@ -197,9 +197,22 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 Berikut hasil evaluasi pada penelitian ini:
 
-| presision | recall | f1-score | support |
-| --------- | ------ | -------- | ------- |
+99.931452	99.931318
+LogisticRegression	99.825252	99.822295
+XGBoost	99.987718	99.980197
 
+
+| class | presision | recall | f1-score | support |
+| ----- | --------- | ------ | -------- | ------- |
+|   0   |   1.00    |  1.00  |   1.00   | 1906318 |
+|   1   |   0.97    |  0.87  |   0.92   |  2468   |
+
+| models | train | test |
+| ------ | ----- | ---- |
+| random forest | 99.93% | 99.93% |
+| logistic regression | 99.82% | 99.82% |
+| xgboost | 99.98% | 99.98 |
+  
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
