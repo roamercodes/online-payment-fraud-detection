@@ -36,11 +36,13 @@ Transaksi penipuan yang terjadi saat ini telah menggunakan sistem secara elektro
 Data yang digunakan dalam proyek ini didapatkan di situs [kaggle](https://kaggle.com) kumpulan data ini merupakan data sintetik yang dihasilkan menggunakan simulator yang dimanakan PaySim. PaySim mensimulasikan transaksi elektronik berdasarkan sampel transaksi nyata yang diambil dari log transaksi keuangan satu bulan dari layanan uang seluler yang diterapkan di negara Afrika. Lebih lebih detailnya bisa dilihat pada sumber data [kaggle: online fraud detection](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection?resource=download)
 
 Berikut informasi dataset:  
+
 - Dataset memiliki 6362620 sampel dan 11 fitur.
 - Dataset memili 3 fitur bertipe data object, 3 bertipe data int64 dan 4 bertipe data float64.
 - Dataset berformat CSV (comma separated value).
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
+
 | Variabel        | Deksripsi |
 | --------------- | ---- |
 | step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
@@ -78,6 +80,7 @@ Pada tabel dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada seti
 Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
 
 Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada pada fitur type, ternyata pada fitur type ada lima jenis metode transaksi, yaitu:
+
 - Payment
 - Transfer
 - Cash Out
@@ -127,9 +130,7 @@ Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan meli
 
 ## Data Preparation
 
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/00dda550-c83c-4b38-9549-28680ccd4088)
-
-Seperti pada gambar diatas, fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik atau biasa disebut [One Hot Encoding](https://ilmudatapy.com/one-hot-encoding-di-python/).
+Fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik atau biasa disebut [One Hot Encoding](https://ilmudatapy.com/one-hot-encoding-di-python/).
 
 Kemudian melakukan pembagian data untuk data latih dan data tes. Data latih digunakan pada proses pembelajaran dalam membangun model sedangkan data tes digunakan pada proses evaluasi kinerja model. Karena data cukup banyak maka pada proyek ini dilakukan pembagian sebanyak 70% untuk data latih dan 30% untuk data tes, jadi dari total dataset 6362620 maka data latih mendapat 4453834 dan data tes mendapat 1908786.
 
@@ -142,6 +143,7 @@ Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logist
   - Kelebihan
     
     Regression models logistik tidak hanya model klasifikasi, tetapi juga memberikan probabilitas. Ini adalah keuntungan besar dibandingkan model yang hanya dapat memberikan klasifikasi akhir. Mengetahui bahwa sebuah instance memiliki probabilitas 99% untuk suatu kelas dibandingkan dengan 51% membuat perbedaan besar. [Logistic Regression](https://interpretable-ml.keamanansiber.id/logistic.html)
+
   - Kelemahan
     
     Regression models logistik memiliki kelemahan interpretasinya lebih sulit karena interpretasi bobotnya bersifat perkalian dan tidak aditif. Logistic regression dapat mengalami pemisahan lengkap. Jika ada fitur yang akan memisahkan kedua kelas secara sempurna, regression models logistik tidak dapat lagi dilatih. Ini karena bobot untuk fitur itu tidak akan konvergen, karena bobot optimalnya tidak terbatas. Ini benar-benar agak disayangkan, karena fitur seperti itu sangat berguna. Tetapi Anda tidak memerlukan machine learning jika Anda memiliki aturan sederhana yang memisahkan kedua kelas. Masalah pemisahan lengkap dapat diselesaikan dengan memperkenalkan penalty bobot atau mendefinisikan distribusi probabilitas bobot sebelumnya. [Logistic Regression](https://interpretable-ml.keamanansiber.id/logistic.html)
@@ -149,6 +151,12 @@ Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logist
 - Random Forest
 
   Random Forest membuat prediksi kategori dengan beberapa nilai yang mungkin dan dapat dikalibrasi untuk probabilitas output. Satu hal yang perlu diwaspadai adalah overfitting. Random Forest rawan terjadi overfitting, terutama ketika bekerja dengan dataset yang relatif kecil. Perlu di curigai jika model data dapat membuat prediksi yang "terlalu bagus" pada set uji menggunakan Random Forest. Salah satu cara overfitting adalah menggunakan fitur yang benar-benar relevan dalam model data yang digunakan. [Algoritma Random Forest](https://learningbox.coffeecup.com/05_2_randomforest.html)
+
+Parameter yang digunakan pada model ini:
+
+- n_estimators = Jumlah maksimum estimator di mana boosting dihentikan.
+- max_depth = Kedalaman maksimum setiap tree.
+- `random_state` = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
   
   - Kelebihan
   
