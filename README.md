@@ -195,7 +195,7 @@ Model terbaik didapat pada XGBoost, dengan menggunakan model ini mampu mendapatk
 
 ## Evaluation
 
-Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu _confussion matriks_ **akurasi, precision, recall, dan F1 score**. Dari sebuah matriks konfusi kita bisa mendapatkan nilai-nilai seperti true positive (TP), false positive (FP), true negative (TN), dan false negative (FN). Setiap nilai yang disebutkan dapat digunakan untuk mendapatkan  presisi, F1, recall dan akurasi [Understanding Confusion Matrix](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62). Persamaan di bawah ini menunjukan fungsi dari keempat istilah tersebut :
+Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu _confussion matriks_ **akurasi, precision, recall, dan F1 score**. Dari sebuah matriks konfusi kita bisa mendapatkan nilai-nilai seperti _true positive (TP)_, _false positive (FP)_, _true negative (TN)_, dan f_alse negative (FN)_. Setiap nilai yang disebutkan dapat digunakan untuk mendapatkan  _precision, F1, recall & accuracy_ [Understanding Confusion Matrix](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62). Persamaan di bawah ini menunjukan fungsi dari keempat istilah tersebut :
 
 - Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
 
@@ -214,7 +214,7 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
   
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
-| $$F1-Score = \frac {2   x   Recall   x   Precision} { Recall + Precision }$$ |
+| $$F1 = \frac {2   x   Recall   x   Precision} { Recall + Precision }$$ |
 | -------------------------------------------------------------------- |
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
