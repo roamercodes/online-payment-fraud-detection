@@ -209,11 +209,7 @@ $$ Precision = \frac {TP} { TP + FP }
 
 - Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
 
-  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/cb0f77cc-6621-49be-8b43-49b3d4deb8a7)
-
-$$ 
-Recall = \frac {TP} { TP + FN } 
-$$
+Recall = \frac {TP} { TP + FN } $$
 
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
