@@ -207,7 +207,7 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 - Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
 
-  $Recall = \frac {TP} {TP + FN }$
+  | $Recall = \frac {TP} {TP + FN }$ |
 
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
