@@ -199,15 +199,13 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 - Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
 
-  ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d638fec0-4c47-4b04-b243-2ebd2afdb117)
-
 $$ Accuracy = \frac {TP + TN} { TP + FP + FN + TN } $$
 
 - Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif. 
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/255335b4-ca63-42c3-bf25-4287b10596f7)
 
-Precision = \frac {TP} { TP + FP }
+$$ Precision = \frac {TP} { TP + FP }
 
 - Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
 
