@@ -199,8 +199,8 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 - Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
 
-| $$`Accuracy = \frac {TP + TN} { TP + FP + FN + TN }`$$ |
-| ------------------------------------------------------ |
+| $$Accuracy = \frac {TP + TN} { TP + FP + FN + TN }$$ |
+| ---------------------------------------------------- |
 
 - Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif.
 
