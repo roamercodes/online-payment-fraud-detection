@@ -96,8 +96,6 @@ Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untu
 
 Kemudian pada kolom _isFraud_ transaksi penipuan hanya terjadi di 2 metode transaksi, yakni _cash_out_ dan _transfer_
 
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/cfff1136-ffb9-4dff-9983-5f6358a67150)
-
 | type | 0 | 1 |
 | ---- | - | - |
 | CASH_IN | 1399284 | 0 |
@@ -107,8 +105,6 @@ Kemudian pada kolom _isFraud_ transaksi penipuan hanya terjadi di 2 metode trans
 | TRANSFER | 528812 | 4097 |
 
 Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu. Karena terlalu sedikit, maka fitur tersebut tidak akan digunakan.
-
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/4d993b27-a80d-4910-b4ff-63a2b24a6c75)
 
 | type | 0 | 1 |
 | ---- | - | - |
@@ -216,6 +212,10 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
+
+
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
