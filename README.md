@@ -203,7 +203,7 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 - Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif.
 
-  $Precision = \frac {TP} { TP + FP }$
+  $*Precision = \frac {TP} { TP + FP }*$
 
 - Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
 
