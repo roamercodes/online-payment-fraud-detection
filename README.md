@@ -214,7 +214,7 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
 
 $$ 
-\frac{\pi^4}{15} 
+dx = \frac{\pi^4}{15} 
 $$
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
