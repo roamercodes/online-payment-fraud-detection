@@ -41,7 +41,8 @@ Berikut informasi dataset:
 - Dataset berformat CSV (comma separated value).
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
-
+| Fitur           | arti |
+| --------------- | ---- |
 | step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
 | type            | Metode transaksi |
 | amount          | Jumlah transaksi |
