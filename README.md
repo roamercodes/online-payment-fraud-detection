@@ -217,6 +217,8 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
+\frac{\pi^4}{15}
+
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
 | models | train | test |
