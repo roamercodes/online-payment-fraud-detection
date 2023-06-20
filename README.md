@@ -249,6 +249,10 @@ Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.97    |  0.87  |   0.92   |  2468   |
 
+## Kesimpulan
+
+Transaksi secara elektronik dimasa modern akan terus selalu meningkat dan berkembang, tidak dapat dipungkiri juga dari kemudahan bertransaksi tersebut akan dapat disalahgunakan. Pada penelitian ini terkait dengan memprediksi transaksi penipuan. Maka dari 3 model algoritma yaitu _Random Forest_, _Logistic Regresion_ dan _XGBoost_ berhasil mendapatkan hasil yang sesuai ekspetasi dengan akurasi diatas 99% dan dengan adanya pembelajaran mesin maka dapat membantu mendeteksi adanya transaksi penipuan. Diharapkan pada masa mendatang tingkat prediksi dapat mencakup jenis atau metode transaksi yang lebih luas lagi agar dapat meminimalisir tingkat kerugian pada pihak-pihak terkait.
+
 ## Daftar Pustaka
 
 - [Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering](https://hcommons.org/deposits/objects/hc:43350/datastreams/CONTENT/content) 
