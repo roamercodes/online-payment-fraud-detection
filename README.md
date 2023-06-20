@@ -199,19 +199,19 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 - Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
 
-  `$Accuracy = \frac {TP + TN} { TP + FP + FN + TN }$`
+  $`Accuracy = \frac {TP + TN} { TP + FP + FN + TN }`$
 
 - Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif.
 
-  `$Precision = \frac {TP} { TP + FP }$`
+  $Precision = \frac {TP} { TP + FP }$
 
 - Recall adalah prediksi rasio TP dibanding keseluruhan data yang benar.
 
-$$ Recall = \frac {TP} {TP + FN } $$
+  $Recall = \frac {TP} {TP + FN }$
 
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
-$$ F1-Score = \frac {2 x Recall x Precision} { Recall + Precision } $$
+  $F1-Score = \frac {2 x Recall x Precision} { Recall + Precision }$
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
