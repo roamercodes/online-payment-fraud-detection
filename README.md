@@ -201,6 +201,10 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d638fec0-4c47-4b04-b243-2ebd2afdb117)
 
+  $$ 
+    Accuracy = \frac{TP + TN} { TP + FP + FN + TN } 
+  $$
+
 - Presisi adalah prediksi rasio TP dibanding keseluruhan prediksi positif. 
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/255335b4-ca63-42c3-bf25-4287b10596f7)
@@ -212,10 +216,6 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
   ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/e986f4f8-1824-4652-a1b9-5c4adeeec503)
-
-$$ 
-Accuracy = \frac{TP + TN}{15} 
-$$
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
