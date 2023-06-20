@@ -214,7 +214,7 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
   
 - F1-score adalah perbandingan sebuah rata-rata presisi dan recall.
 
-| $$F1-Score = \frac {2 x Recall x Precision} { Recall + Precision }$$ |
+| $$F1-Score = \frac {2   x   Recall   x   Precision} { Recall + Precision }$$ |
 | -------------------------------------------------------------------- |
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
