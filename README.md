@@ -4,18 +4,10 @@
 
 ### Latar Belakang 
 
-Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan machine learning menggunakan metode klasifikasi beberapa algoritmanya.  
+Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
 
 ![dataset-cover](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d10751f1-3a25-4b40-9c80-503a67264363)
 
-**Referensi**:
-- [Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering](https://hcommons.org/deposits/objects/hc:43350/datastreams/CONTENT/content) 
-- [Advantages of the PaySim Simulator for Improving Financial Fraud Controls](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2640900/Computing2019papercameraready.pdf?sequence=1) 
-- [Mengenal Elektronik Banking](http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125/112) 
-- [Penerapan Deep Learningdalam Deteksi Penipuan Transaksi Keuangan Secara Elektronik](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
-- [Analisa Transaksi Belanja Online Pada Masa Pandemi Covid-19](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
-- [dicoding - machine learning terapan](https://www.dicoding.com/academies/319)
-  
 ## Business Understanding
 
 Transaksi penipuan yang terjadi saat ini telah menggunakan sistem secara elektronik sehingga untuk mengidentifikasi tersebut perlu juga menggunakan teknologi yang mumpuni. Teknologi machine learning dapat berkontribusi secara bermanfaat dalam tantangan mendeteksi transaksi penipuan.
@@ -49,17 +41,18 @@ Berikut informasi dataset:
 - Dataset berformat CSV (comma separated value).
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
-- step            : Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari).
-- type            : Metode transaksi 
-- amount          : Jumlah transaksi
-- nameOrig        : Pelanggan memulai transaksi
-- oldbalanceOrg   : Saldo awal sebelum transaksi
-- newbalanceOrig  : Saldo baru setelah transaksi
-- nameDest        : Penerima transaksi
-- oldbalanceDest  : Penerima saldo awal sebelum transaksi.
-- newbalanceDest  : Penerima saldo baru setelah transaksi.
-- isFraud         : Transaksi penipuan.
-- isFlaggedFraud  : Transaksi ditandai penipuan dan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu.
+
+| step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
+| type            | Metode transaksi |
+| amount          | Jumlah transaksi |
+| nameOrig        | Pelanggan memulai transaksi |
+| oldbalanceOrg   | Saldo awal sebelum transaksi |
+| newbalanceOrig  | Saldo baru setelah transaksi |
+| nameDest        | Penerima transaksi |
+| oldbalanceDest  | Penerima saldo awal sebelum transaksi |
+| newbalanceDest  | Penerima saldo baru setelah transaksi |
+| isFraud         | Transaksi penipuan |
+| isFlaggedFraud  | Transaksi ditandai penipuan dan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu |
 
 ### Penanganan missing value & Outliers
 
@@ -213,4 +206,14 @@ Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.97    |  0.87  |   0.92   |  2468   |
+
+## Daftar Pustaka
+
+- [Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering](https://hcommons.org/deposits/objects/hc:43350/datastreams/CONTENT/content) 
+- [Advantages of the PaySim Simulator for Improving Financial Fraud Controls](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2640900/Computing2019papercameraready.pdf?sequence=1) 
+- [Mengenal Elektronik Banking](http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125/112) 
+- [Penerapan Deep Learningdalam Deteksi Penipuan Transaksi Keuangan Secara Elektronik](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
+- [Analisa Transaksi Belanja Online Pada Masa Pandemi Covid-19](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
+- [dicoding - machine learning terapan](https://www.dicoding.com/academies/319)
+  
 
