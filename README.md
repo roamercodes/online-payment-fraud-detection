@@ -57,11 +57,9 @@ Berikut informasi dataset:
 
 ### Penanganan missing value & Outliers
 
-Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
+Pada tabel dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
 
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/694fc23e-cda5-4d06-a066-48dc8b3abc1b)
-
-| Variabel        | value |
+| Variabel        | Missing value |
 | --------------- | - |
 | step            | 0 |
 | type            | 0 |
