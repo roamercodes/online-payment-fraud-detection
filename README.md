@@ -86,20 +86,34 @@ Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada 
 
 Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi sebanyak 35% dan _debit_ menjadi yang terkecil yakni 0.7%.
 
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d0b63e2e-0df0-4683-9151-c7eeb78ad8f8)
+![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/38b2d545-66f0-4093-93a0-d1330b9a2521)
 
 
 Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
-
-![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/b7198d14-b83f-4626-995d-f5475eca532d)
 
 Kemudian pada kolom _isFraud_ transaksi penipuan hanya terjadi di 2 metode transaksi, yakni _cash_out_ dan _transfer_
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/cfff1136-ffb9-4dff-9983-5f6358a67150)
 
+| type | 0 | 1 |
+| ---- | - | - |
+| CASH_IN | 1399284 | 0 |
+| CASH_OUT | 2233384 | 4116 |
+| DEBIT | 41432 | 0 |
+| PAYMENT | 2151495 | 0 |
+| TRANSFER | 528812 | 4097 |
+
 Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu. Karena terlalu sedikit, maka fitur tersebut tidak akan digunakan.
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/4d993b27-a80d-4910-b4ff-63a2b24a6c75)
+
+| type | 0 | 1 |
+| ---- | - | - |
+| CASH_IN | 1399284 | 0 |
+| CASH_OUT | 2233384 | 0 |
+| DEBIT | 41432 | 0 |
+| PAYMENT | 2151495 | 0 |
+| TRANSFER | 528812 | 16 |
 
 ### Multivariate Analysis
 
