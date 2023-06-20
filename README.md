@@ -41,7 +41,7 @@ Berikut informasi dataset:
 - Dataset berformat CSV (comma separated value).
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
-| Fitur           | arti |
+| Variabel        | Deksripsi |
 | --------------- | ---- |
 | step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
 | type            | Metode transaksi |
@@ -60,6 +60,21 @@ Berikut informasi dataset:
 Pada gambar dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/694fc23e-cda5-4d06-a066-48dc8b3abc1b)
+
+| Variabel        | value |
+| --------------- | - |
+| step            | 0 |
+| type            | 0 |
+| amount          | 0 |
+| nameOrig        | 0 |
+| oldbalanceOrg   | 0 |
+| newbalanceOrig  | 0 |
+| nameDest        | 0 |
+| oldbalanceDest  | 0 |
+| newbalanceDest  | 0 |
+| isFraud         | 0 |
+| isFlaggedFraud  | 0 |
+
 
 ### Univariate Analysis
 Analisis univariat merupaka teknik analisis data terhadap satu variabel secara mandiri.
