@@ -43,6 +43,7 @@ Berikut informasi dataset:
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
 
+Tabel 1. Deskripsi variabel
 | Variabel        | Deksripsi |
 | --------------- | ---- |
 | step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
@@ -60,6 +61,8 @@ Berikut informasi dataset:
 ### Penanganan missing value & Outliers
 
 Pada tabel dibawah ini dapat diketahui bahwa tidak ada _missing value_ pada setiap fitur.
+
+Tabel 2. jumlah _missinh value_
 
 | Variabel        | Missing value |
 | --------------- | - |
@@ -94,6 +97,8 @@ Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi seb
 Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
 
 Kemudian pada kolom _isFraud_ transaksi penipuan hanya terjadi di 2 metode transaksi, yakni _cash_out_ dan _transfer_
+
+Tabel 3. transaksi penipuan pada fitur _isFraud_ 
 
 | type | 0 | 1 |
 | ---- | - | - |
@@ -231,6 +236,7 @@ Berikut hasil evaluasi pada penelitian ini yaitu pada model _Random Forest_ :
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   1.00    |  0.47  |   0.64   |  2468   |
+
 
   
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _Logistic Regression_ :
