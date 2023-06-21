@@ -255,11 +255,7 @@ Transaksi secara elektronik dimasa modern akan terus selalu meningkat dan berkem
 
 ## Daftar Pustaka
 
-- [Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering](https://hcommons.org/deposits/objects/hc:43350/datastreams/CONTENT/content) 
-- [Advantages of the PaySim Simulator for Improving Financial Fraud Controls](https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2640900/Computing2019papercameraready.pdf?sequence=1) 
-- [Mengenal Elektronik Banking](http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125/112) 
-- [Penerapan Deep Learningdalam Deteksi Penipuan Transaksi Keuangan Secara Elektronik](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
-- [Analisa Transaksi Belanja Online Pada Masa Pandemi Covid-19](https://ejurnal.teknokrat.ac.id/index.php/teknoinfo/article/view/868/517) 
-- [dicoding - machine learning terapan](https://www.dicoding.com/academies/319)
-  
-
+[1]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
+[2]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+[3]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
+[4]	N. A. Rakhmawati, A. E. Permana, A. M. Reyhan, and H. Rafli, “ANALISA TRANSAKSI BELANJA ONLINE PADA MASA PANDEMI COVID-19,” J. Teknoinfo, vol. 15, no. 1, Art. no. 1, Jan. 2021, doi: 10.33365/jti.v15i1.868.
