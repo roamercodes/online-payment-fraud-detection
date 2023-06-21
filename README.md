@@ -256,6 +256,9 @@ Transaksi secara elektronik dimasa modern akan terus selalu meningkat dan berkem
 ## Daftar Pustaka
 
 [1]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
+
 [2]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+
 [3]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
+
 [4]	N. A. Rakhmawati, A. E. Permana, A. M. Reyhan, and H. Rafli, “ANALISA TRANSAKSI BELANJA ONLINE PADA MASA PANDEMI COVID-19,” J. Teknoinfo, vol. 15, no. 1, Art. no. 1, Jan. 2021, doi: 10.33365/jti.v15i1.868.
