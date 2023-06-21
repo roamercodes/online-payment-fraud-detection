@@ -44,6 +44,7 @@ Berikut informasi dataset:
 ### Variabel-variabel pada dataset adalah sebagai berikut:
 
 Tabel 1. Deskripsi variabel
+
 | Variabel        | Deksripsi |
 | --------------- | ---- |
 | step            | Memetakan satuan waktu di dunia nyata. Dalam hal ini 1 step adalah 1 jam. Total step 744 (simulasi 30 hari) |
@@ -109,6 +110,8 @@ Tabel 3. transaksi penipuan pada fitur _isFraud_
 | TRANSFER | 528812 | 4097 |
 
 Pada kolom _isFlaggedFraud_ ada 16 transaksi yang ditandai sebagai penipuan melibatkan transfer lebih dari 200.000 unit dalam mata uang tertentu. Karena terlalu sedikit, maka fitur tersebut tidak akan digunakan.
+
+Tabel 4. jumlah transaksi penipuan pada fitur _isFlaggedFraud_
 
 | type | 0 | 1 |
 | ---- | - | - |
@@ -223,6 +226,8 @@ Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penel
 
 Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang digunakan:
 
+Tabel 5. hasil akurasi data latih dan data tes dari 3 algoritma
+
 | models | train | test |
 | ------ | :---: | ---: |
 | random forest | 99.93% | 99.93% |
@@ -232,27 +237,38 @@ Berikut hasil akurasi _training_ dan _testing_ pada masing-masing model yang dig
    
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _Random Forest_ :
 
-| class | presision | recall | f1-score | support |
+Tabel 6. hasil _precision_, _f1-score_ dan _support_ model _random forest_.
+
+| class | precision | recall | f1-score | support |
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   1.00    |  0.47  |   0.64   |  2468   |
 
+Pada tabel 6. hasil _Precision recall_ dan _F1 Score_ untuk kelas/label 0 (bukan transaksi penipuan) sangat baik, dimana tingkat presisi, keberhasilan model menemukan kembali sebuah informasi pada label 0 semua mendapat 100%.
+Berbeda pada label 1 (transaksi penipuan) akurasi antara data yang diminta dengan hasil prediksi yang diberikan oleh model atau _precision_ mmendapat nilai yang baik, sedangkan keberhasilan model menemukan kembali sebuah informasi atau _recall_ cukup buruk yakni 47% dan perbandingan rata-rata _precision_ dan _recall_ yang dibobotkan atau _F1 Score_ mendapatkan nilai 64%. Maka metrik yang dapat dijadikan acuan pada model ini adalah _accuracy_ pada performa algoritma.
 
-  
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _Logistic Regression_ :
+
+Tabel 7. hasil _precision_, _f1-score_ dan _support_ model _logistic regression_.
 
 | class | presision | recall | f1-score | support |
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.34    |  0.41  |   0.38   |  2468   |
 
-  
+Pada tabel 7. hasil _Precision recall_ dan _F1 Score_ untuk kelas/label 0 (bukan transaksi penipuan) sangat baik, dimana tingkat presisi, keberhasilan model menemukan kembali sebuah informasi pada label 0 semua mendapat 100%.
+Sedangkan pada label 1 (transaksi penipuan) akurasi antara data yang diminta dengan hasil prediksi yang diberikan oleh model atau _precision_ mmendapat nilai yang buruk yakni 34%, sedangkan keberhasilan model menemukan kembali sebuah informasi atau _recall_ cukup buruk yakni 41% dan perbandingan rata-rata _precision_ dan _recall_ yang dibobotkan atau _F1 Score_ juga cukup buruk yakni mendapatkan nilai 38%. Maka metrik yang dapat dijadikan acuan pada model ini adalah _accuracy_ pada performa algoritma.
+
 Berikut hasil evaluasi pada penelitian ini yaitu pada model _XGBoost_ :
+
+Tabel 8. hasil _precision_, _f1-score_ dan _support_ model _XGBoost_.
 
 | class | presision | recall | f1-score | support |
 | ----- | --------- | ------ | -------- | ------- |
 |   0   |   1.00    |  1.00  |   1.00   | 1906318 |
 |   1   |   0.97    |  0.87  |   0.92   |  2468   |
+
+Pada tabel 7. dari model XGBoost inilah kedua label 0 dan 1 hasil _Precision recall_ dan _F1 Score_ mendapatkan nilai yang bagus, tidak hanya akurasi dari data latih maupun data uji. Pada kasus ini, _XGBoost_ menjadi model terbaik.
 
 ## Kesimpulan
 
