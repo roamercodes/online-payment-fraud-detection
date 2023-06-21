@@ -4,7 +4,7 @@
 
 ### Latar Belakang 
 
-Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
+Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya [1]. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait [2]. Transaksi penipuan secara _online_ pasti terdapat korban yang dirugikan dan pihak lainnya yang diuntungkan, yang dirugikan dapat berupa individu maupun kelompok atau bahkan negara [3], Transaksaksi penipuan telah menimbulkan dampak atau pengaruh yang negatif terhadap bidang perekonomian dan bisnis yaitu, merongrong sektor bisnis swasta yang sah, merongrong integritas pasarpasar keuangan, mengakibatkan hilangnya kendali pemerintah terhadap kebijakan ekonominya, dan timbulnya distorsi dan ketidakstabilan ekonomi [4]. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
 
 ![dataset-cover](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d10751f1-3a25-4b40-9c80-503a67264363)
 
@@ -90,7 +90,6 @@ Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada 
 Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi sebanyak 35% dan _debit_ menjadi yang terkecil yakni 0.7%.
 
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/38b2d545-66f0-4093-93a0-d1330b9a2521)
-
 
 Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
 
@@ -255,10 +254,16 @@ Transaksi secara elektronik dimasa modern akan terus selalu meningkat dan berkem
 
 ## Daftar Pustaka
 
-[1]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
+[1]	N. A. Rakhmawati, A. E. Permana, A. M. Reyhan, and H. Rafli, “ANALISA TRANSAKSI BELANJA ONLINE PADA MASA PANDEMI COVID-19,” J. Teknoinfo, vol. 15, no. 1, Art. no. 1, Jan. 2021, doi: 10.33365/jti.v15i1.868.
 
-[2]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+[2]	Faried Zamachsari and Niken Puspitasari, “Penerapan Deep Learning dalam Deteksi Penipuan Transaksi Keuangan Secara Elektronik | Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi),” Apr. 2021, Accessed: Jun. 21, 2023. [Online]. Available: http://jurnal.iaii.or.id/index.php/RESTI/article/view/2952
 
-[3]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
+[3]	N. Rahmad, “Kajian Hukum terhadap Tindak Pidana Penipuan Secara Online,” J. Huk. Ekon. Syariah, vol. 3, no. 2, Art. no. 2, Dec. 2019, doi: 10.26618/j-hes.v3i2.2419.
 
-[4]	N. A. Rakhmawati, A. E. Permana, A. M. Reyhan, and H. Rafli, “ANALISA TRANSAKSI BELANJA ONLINE PADA MASA PANDEMI COVID-19,” J. Teknoinfo, vol. 15, no. 1, Art. no. 1, Jan. 2021, doi: 10.33365/jti.v15i1.868.
+[4]	I. Kurniawan, “Perkembangan Tindak Pidana Pencucian Uang (Money Laundering) Dan Dampaknya Terhadap Sektor Ekonomi Dan Bisnis,” J. Ilmu Huk., vol. 4, no. 1, Art. no. 1, Mar. 2013, doi: 10.30652/jih.v3i1.1037.
+
+[5]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
+
+[6]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+
+[7]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
