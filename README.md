@@ -4,8 +4,9 @@
 
 ### Latar Belakang 
 
-Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya [1]. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait [2]. Transaksi penipuan secara _online_ pasti terdapat korban yang dirugikan dan pihak lainnya yang diuntungkan, yang dirugikan dapat berupa individu maupun kelompok atau bahkan negara [3], Transaksaksi penipuan telah menimbulkan dampak atau pengaruh yang negatif terhadap bidang perekonomian dan bisnis yaitu, merongrong sektor bisnis swasta yang sah, merongrong integritas pasarpasar keuangan, mengakibatkan hilangnya kendali pemerintah terhadap kebijakan ekonominya, dan timbulnya distorsi dan ketidakstabilan ekonomi [4]. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
+Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya [1][6]. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pehiak terkait [2]. Transaksi penipuan secara _online_ pasti terdapat korban yang dirugikan dan pihak lainnya yang diuntungkan, yang dirugikan dapat berupa individu maupun kelompok atau bahkan negara [3][7], Transaksaksi penipuan telah menimbulkan pengaruh negatif terhadap bidang perekonomian dan bisnis yaitu, merongrong sektor bisnis swasta yang sah, merongrong integritas pasarpasar keuangan, mengakibatkan hilangnya kendali pemerintah terhadap kebijakan ekonominya, dan timbulnya distorsi dan ketidakstabilan ekonomi [4][8]. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
 
+gambar 1. proyek cover
 ![dataset-cover](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d10751f1-3a25-4b40-9c80-503a67264363)
 
 ## Business Understanding
@@ -93,6 +94,7 @@ Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada 
 
 Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi sebanyak 35% dan _debit_ menjadi yang terkecil yakni 0.7%.
 
+gambar 2. sebaran data pada fitur _type_
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/38b2d545-66f0-4093-93a0-d1330b9a2521)
 
 Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
@@ -125,6 +127,7 @@ Tabel 4. jumlah transaksi penipuan pada fitur _isFlaggedFraud_
 
 - Korelasi antar fitur numerik
 
+gambar 3. matriks korelasi antar fitur numerik
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/1fbbe7b9-d309-4603-b6eb-e6f0659884e1)
 
   - _newbalanceOrig_ dan _oldbalanceOrg_ meliki korelasi yang tinggi.
@@ -138,10 +141,10 @@ Fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima mak
 Pembagian data untuk data latih dan data tes, data latih digunakan pada proses pembelajaran dalam membangun model sedangkan data tes digunakan pada proses evaluasi kinerja model. Pembagian proporsi data latih dan data tes didasari dengan metode pembagian data yaitu _cross validation_ dimana dapat menggunakan proporsi tertentu tergantung dari proporsi dataset yang dimiliki, umumnya adalah `7:3`, `8:2` dan `9:1`, karena data pada penelitian ini cukup memadai maka proporsi pembagian data yang dipilih adalah 7:3, jika telah mencapai hasil yang memuaskan yaitu _accuracy_ diatas 90% maka cukup menggunakan satu _k-fold_ saja. Dari total dataset 6362620 maka data latih mendapat 4453834 dan data tes mendapat 1908786. 
 
 ## Modeling
-Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html) [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) [XGBoost](https://xgboost.readthedocs.io/en/stable/).
+Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html), [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), [XGBoost](https://xgboost.readthedocs.io/en/stable/).
 
 - Logistic Regression
-  Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak. Logistic Regression menggunakan probabilitas untuk memprediksi klasifikasi data kategorikal. Nilai input dapat digabungkan secara linier menggunakan fungsi sigmoid atau logistik dan nilai koefisien untuk memprediksi hasil. Estimasi kemungkinan maksimum dianggap menggunakan fungsi sigmoid untuk mengasumsikan data yang paling mungkin dan probabilitas diberikan antara 0 sampai 1 mengatakan apakah suatu peristiwa akan terjadi atau tidak [Komparasi Support Vector Machine, Logistic Regression Dan Artificial Neural Network dalam Prediksi Penyakit Jantung](https://jurnal.untan.ac.id/index.php/jepin/article/view/48053/75676591338).
+  Regresi logistik adalah teknik analisis data yang menggunakan matematika untuk menemukan hubungan antara dua faktor data. Kemudian menggunakan hubungan ini untuk memprediksi nilai dari salah satu faktor tersebut berdasarkan faktor yang lain. Prediksi biasanya memiliki jumlah hasil yang terbatas, seperti ya atau tidak. Logistic Regression menggunakan probabilitas untuk memprediksi klasifikasi data kategorikal. Nilai input dapat digabungkan secara linier menggunakan fungsi sigmoid atau logistik dan nilai koefisien untuk memprediksi hasil. Estimasi kemungkinan maksimum dianggap menggunakan fungsi sigmoid untuk mengasumsikan data yang paling mungkin dan probabilitas diberikan antara 0 sampai 1 mengatakan apakah suatu peristiwa akan terjadi atau tidak [5].
 
 Parameter yang digunakan pada mmodel ini adalah:
 
@@ -151,15 +154,14 @@ Parameter yang digunakan pada mmodel ini adalah:
   
   - Kelebihan
     
-    Regression models logistik tidak hanya model klasifikasi, tetapi juga memberikan probabilitas. Ini adalah keuntungan besar dibandingkan model yang hanya dapat memberikan klasifikasi akhir. Mengetahui bahwa sebuah instance memiliki probabilitas 99% untuk suatu kelas dibandingkan dengan 51% membuat perbedaan besar. [Logistic Regression](https://interpretable-ml.keamanansiber.id/logistic.html)
-
+    Regression models logistik tidak hanya model klasifikasi, tetapi juga memberikan probabilitas. Ini adalah keuntungan besar dibandingkan model yang hanya dapat memberikan klasifikasi akhir. Mengetahui bahwa sebuah instance memiliki probabilitas 99% untuk suatu kelas dibandingkan dengan 51% membuat perbedaan besar.
   - Kelemahan
     
-    Regression models logistik memiliki kelemahan interpretasinya lebih sulit karena interpretasi bobotnya bersifat perkalian dan tidak aditif. Logistic regression dapat mengalami pemisahan lengkap. Jika ada fitur yang akan memisahkan kedua kelas secara sempurna, regression models logistik tidak dapat lagi dilatih. Ini karena bobot untuk fitur itu tidak akan konvergen, karena bobot optimalnya tidak terbatas. Ini benar-benar agak disayangkan, karena fitur seperti itu sangat berguna. Tetapi Anda tidak memerlukan machine learning jika Anda memiliki aturan sederhana yang memisahkan kedua kelas. Masalah pemisahan lengkap dapat diselesaikan dengan memperkenalkan penalty bobot atau mendefinisikan distribusi probabilitas bobot sebelumnya. [Logistic Regression](https://interpretable-ml.keamanansiber.id/logistic.html)
+    Regression models logistik memiliki kelemahan interpretasinya lebih sulit karena interpretasi bobotnya bersifat perkalian dan tidak aditif. Logistic regression dapat mengalami pemisahan lengkap. Jika ada fitur yang akan memisahkan kedua kelas secara sempurna, regression models logistik tidak dapat lagi dilatih. Ini karena bobot untuk fitur itu tidak akan konvergen, karena bobot optimalnya tidak terbatas. Ini benar-benar agak disayangkan, karena fitur seperti itu sangat berguna. Tetapi Anda tidak memerlukan machine learning jika Anda memiliki aturan sederhana yang memisahkan kedua kelas. Masalah pemisahan lengkap dapat diselesaikan dengan memperkenalkan penalty bobot atau mendefinisikan distribusi probabilitas bobot sebelumnya.
     
 - Random Forest
 
-  Random Forest membuat prediksi kategori dengan beberapa nilai yang mungkin dan dapat dikalibrasi untuk probabilitas output. Satu hal yang perlu diwaspadai adalah overfitting. Random Forest rawan terjadi overfitting, terutama ketika bekerja dengan dataset yang relatif kecil. Perlu di curigai jika model data dapat membuat prediksi yang "terlalu bagus" pada set uji menggunakan Random Forest. Salah satu cara overfitting adalah menggunakan fitur yang benar-benar relevan dalam model data yang digunakan. [Algoritma Random Forest](https://learningbox.coffeecup.com/05_2_randomforest.html)
+  Random Forest membuat prediksi kategori dengan beberapa nilai yang mungkin dan dapat dikalibrasi untuk probabilitas output. Satu hal yang perlu diwaspadai adalah overfitting. Random Forest rawan terjadi overfitting, terutama ketika bekerja dengan dataset yang relatif kecil. Perlu di curigai jika model data dapat membuat prediksi yang "terlalu bagus" pada set uji menggunakan Random Forest. Salah satu cara overfitting adalah menggunakan fitur yang benar-benar relevan dalam model data yang digunakan.
 
 Parameter yang digunakan pada model ini:
 
@@ -202,7 +204,7 @@ Model terbaik didapat pada XGBoost, dengan menggunakan model ini mampu mendapatk
 
 ## Evaluation
 
-Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu _confussion matriks_ **akurasi, precision, recall, dan F1 score**. Dari sebuah matriks konfusi kita bisa mendapatkan nilai-nilai seperti _true positive (TP)_, _false positive (FP)_, _true negative (TN)_, dan f_alse negative (FN)_. Setiap nilai yang disebutkan dapat digunakan untuk mendapatkan  _precision, F1, recall & accuracy_ [Understanding Confusion Matrix](https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62). Persamaan di bawah ini menunjukan fungsi dari keempat istilah tersebut :
+Evaluasi berguna untuk mengukur seberapa baik model ketika pengujian, pada penelitian ini untuk mengevaluasi performa model maka akan mengguanakan metrik evaluasi yaitu _confussion matriks_ **akurasi, precision, recall, dan F1 score**. Dari sebuah matriks konfusi kita bisa mendapatkan nilai-nilai seperti _true positive (TP)_, _false positive (FP)_, _true negative (TN)_, dan f_alse negative (FN)_. Setiap nilai yang disebutkan dapat digunakan untuk mendapatkan  _precision, F1, recall & accuracy_. Persamaan di bawah ini menunjukan fungsi dari keempat istilah tersebut :
 
 - Akurasi adalah hasil prediksi yang benar dari keseluruhan data uji.
 
@@ -284,8 +286,10 @@ Transaksi secara elektronik dimasa modern akan terus selalu meningkat dan berkem
 
 [4]	I. Kurniawan, “Perkembangan Tindak Pidana Pencucian Uang (Money Laundering) Dan Dampaknya Terhadap Sektor Ekonomi Dan Bisnis,” J. Ilmu Huk., vol. 4, no. 1, Art. no. 1, Mar. 2013, doi: 10.30652/jih.v3i1.1037.
 
-[5]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
+[5]	F. Handayani, “Komparasi Support Vector Machine, Logistic Regression Dan Artificial Neural Network Dalam Prediksi Penyakit Jantung,” JEPIN J. Edukasi Dan Penelit. Inform., vol. 7, no. 3, Art. no. 3, Dec. 2021, doi: 10.26418/jp.v7i3.48053.
 
-[6]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+[6]	G. H. Cahyono, “MENGENAL ELEKTRONIK BANKING,” Swara Patra Maj. Ilm. PPSDM Migas, vol. 5, no. 1, Art. no. 1, Dec. 2015, Accessed: Jun. 21, 2023. [Online]. Available: http://ejurnal.ppsdmmigas.esdm.go.id/sp/index.php/swarapatra/article/view/125
 
-[7]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
+[7]	O. Raiter, “Applying Supervised Machine Learning Algorithms for Fraud Detection in Anti-Money Laundering”.
+
+[8]	E. A. Lopez-Rojas and C. Barneaud, “Advantages of the PaySim Simulator for Improving Financial Fraud Controls,” in Intelligent Computing, K. Arai, R. Bhatia, and S. Kapoor, Eds., in Advances in Intelligent Systems and Computing, vol. 998. Cham: Springer International Publishing, 2019, pp. 727–736. doi: 10.1007/978-3-030-22868-2_51.
