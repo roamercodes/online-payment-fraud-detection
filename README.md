@@ -7,6 +7,7 @@
 Perkembangan teknologi yang begitu pesat memberi dampak luar biasa kehidupan sehari-hari disertai aktivitas bertransaksi secara elektronik yang menawarkan kemudahan dalam prosesnya [1][6]. Tetapi disisi lain juga terjadi transaksi penipuan yang beragam caranya. Keberagaman jenis transaksi penipuan yang dilakukan menyebabkan sulitnya mengidentifikasi transaksi penipuan yang tentu saja dapat merugikan pihak terkait [2]. Transaksi penipuan secara _online_ pasti terdapat korban yang dirugikan dan pihak lainnya yang diuntungkan, yang dirugikan dapat berupa individu maupun kelompok atau bahkan negara [3][7], Transaksi penipuan telah menimbulkan pengaruh negatif terhadap bidang perekonomian dan bisnis yaitu, merongrong sektor bisnis swasta yang sah, merongrong integritas pasar-pasar keuangan, mengakibatkan hilangnya kendali pemerintah terhadap kebijakan ekonominya, dan timbulnya distorsi dan ketidakstabilan ekonomi [4][8]. Tujuan penelitian ini adalah membuat model terbaik yang dapat mendeteksi adanya transaksi penipuan dengan _machine learning_ menggunakan metode klasifikasi dan beberapa algoritmanya.  
 
 gambar 1. proyek cover
+
 ![dataset-cover](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/d10751f1-3a25-4b40-9c80-503a67264363)
 
 ## Business Understanding
@@ -95,6 +96,7 @@ Kita akan melihat ada metode transaksi apa saja pada kumpulan data ini yang ada 
 Sebaran data fitur _type_ metode transaksi _cash_out_ menjadi yang tertinggi sebanyak 35% dan _debit_ menjadi yang terkecil yakni 0.7%.
 
 gambar 2. sebaran data pada fitur _type_
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/38b2d545-66f0-4093-93a0-d1330b9a2521)
 
 Pada fitur isFraud berisi _boolean_ label target yakni 0 dan 1, ada 6354407 untuk label 0 dan 8213 untuk label 1 yang berarti ada 8213 ditandai sebagai transaksi penipuan. Jika dilihat dari total data maka untuk transaksi yang ditandai penipuan hanya 0.13%
@@ -128,6 +130,7 @@ Tabel 4. jumlah transaksi penipuan pada fitur _isFlaggedFraud_
 - Korelasi antar fitur numerik
 
 gambar 3. matriks korelasi antar fitur numerik
+
 ![image](https://github.com/roamercodes/online-payment-fraud-detection/assets/22432578/1fbbe7b9-d309-4603-b6eb-e6f0659884e1)
 
   - _newbalanceOrig_ dan _oldbalanceOrg_ memiliki korelasi yang tinggi.
