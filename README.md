@@ -133,9 +133,9 @@ Tabel 4. jumlah transaksi penipuan pada fitur _isFlaggedFraud_
 
 ## Data Preparation
 
-Fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik atau biasa disebut [One Hot Encoding](https://ilmudatapy.com/one-hot-encoding-di-python/).
+Fitur pada kolom _type_ masih bertipe objek, agar dapat diolah oleh algorima maka perlu dilakukan perubahan menjadi numerik atau biasa disebut [One Hot Encoding](https://ilmudatapy.com/one-hot-encoding-di-python/). Hal pertama yang dilakukan untuk mengkonversi isi kolom fitur adalah membuat _list dictionary_ yang _key_-nya adalah isi kolom dari fitur _type_ dan _value_-nya adalah _numeric_ yang mewakili, kemudian menggunakan fungsi _`map`_ untuk mengkonversi seluruh data pada kolom _type_ sesuai dengan _key_ dan _value_-nya_.
 
-Kemudian melakukan pembagian data untuk data latih dan data tes. Data latih digunakan pada proses pembelajaran dalam membangun model sedangkan data tes digunakan pada proses evaluasi kinerja model. Karena data cukup banyak maka pada proyek ini dilakukan pembagian sebanyak 70% untuk data latih dan 30% untuk data tes, jadi dari total dataset 6362620 maka data latih mendapat 4453834 dan data tes mendapat 1908786.
+Pembagian data untuk data latih dan data tes, data latih digunakan pada proses pembelajaran dalam membangun model sedangkan data tes digunakan pada proses evaluasi kinerja model. Pembagian proporsi data latih dan data tes didasari dengan metode pembagian data yaitu _cross validation_ dimana dapat menggunakan proporsi tertentu tergantung dari proporsi dataset yang dimiliki, umumnya adalah `7:3`, `8:2` dan `9:1`, karena data pada penelitian ini cukup memadai maka proporsi pembagian data yang dipilih adalah 7:3, jika telah mencapai hasil yang memuaskan yaitu _accuracy_ diatas 90% maka cukup menggunakan satu _k-fold_ saja. Dari total dataset 6362620 maka data latih mendapat 4453834 dan data tes mendapat 1908786. 
 
 ## Modeling
 Model algoritma pada penelitian ini menggunakan 3 model algoritma, yaitu [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html) [Random Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) [XGBoost](https://xgboost.readthedocs.io/en/stable/).
